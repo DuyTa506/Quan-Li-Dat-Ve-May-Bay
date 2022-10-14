@@ -1,0 +1,432 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chuyến bay</title>
+    <link rel="stylesheet" href="../icon/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="../fontawesome-free-5.15.4/css/all.css"> -->
+    <!-- <link rel="stylesheet" href="../fontawesome-free-5.15.4/css/grid.css"> -->
+    <link rel="stylesheet" href="../css/chuyenbay.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <style>
+    </style>
+    <script type="text/javascript" src="../js/jquery.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#chitiet").click(function () {
+                $(".thongtinchitiet").toggle();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#chitiet1").click(function () {
+                $(".thongtinchitiet1").toggle();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#chitiet2").click(function () {
+                $(".thongtinchitiet2").toggle();
+            });
+        });
+    </script> 
+</head>
+
+<body style="margin:0;">
+    <div class="header" style="width: 100%;"></div>
+    <div class="chuyenbay-content">
+        <section class="tenchuyenbay">
+            <div class="row">
+                <div class="col span-3-of-4 a">
+                    <div class="tenchuyenbay1">
+                        <div class="diemdiden" style="font-size: 110%; font-weight: 700;">
+                            <span>Hà Nội(HAN)</span> <span><i class="fas fa-arrow-right"></i></span> <span>TP HCM(SGN)</span>
+                        </div>
+                        <div class="thoigian" style="margin-top: 10px; color: #837b7b;">
+                            <span>T7,13 Th9 2022</span> <span> | </span> <span>1 hành khách</span> <span>
+                                |
+                            </span> <span> Phổ thông</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-6 b">
+                    <a href="main.html" class="btn" style="border-radius: 5px"><i class="fas fa-search"></i> Đổi tìm kiếm</a>
+                </div>
+            </div>
+        </section>
+        <section class="boloc typeword">
+            <div>
+                <ul>
+                    <li>
+                        <p>Bộ lọc:</p>
+                    </li>
+                    <li>
+                        <select class="item">
+                            <optgroup>
+                                <option value="" selected disabled hidden class="typeword">Điểm dừng</option>
+                                <option>Bay thẳng</option>
+                                <option>1 điểm dừng</option>
+                                <option>2 điểm dừng</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="item">
+                            <optgroup>
+                                <option value="" selected disabled hidden>Thời gian bay</option>
+                                <option>Sáng</option>
+                                <option>Chiều</option>
+                                <option>Tối</option>
+                                <option>Đêm</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="item">
+                            <optgroup>
+                                <option value="" selected disabled hidden>Hãng hàng không</option>
+                                <option>Vienam Airlines</option>
+                                <option>Vietjet Air</option>
+                                <option>Bamboo Airways</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="item">
+                            <optgroup>
+                                <option value="" selected disabled hidden>Sắp xếp</option>
+                                <option>Giá thấp nhất</option>
+                                <option>Bay sớm nhất</option>
+                                <option>Bay muộn nhất</option>
+                                <option>Thời gian bay ngắn nhất</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="thongtinchuyenbay">
+            <div class="thongtin">
+                <div class="thongtinhien">
+                    <ul>
+                        <li><img src="../anh/VietnamAirlines.jpg" alt="vietnam airlines"></li>
+                        <li>
+                            <p>13:00 <p style="color:#837b7b; margin-top: 5px;"> Hà Nội <br> (HAN)</p></p>
+                        </li>
+                        <i class="fas fa-plane icon-plane"></i>
+                        <li>
+                            <p>15:15 <br> <p style="color:#837b7b; margin-top: 5px;"> TP HCM <br>(SGN)</p></p>
+                        </li>
+                        <li>
+                            <p>2h 15m <br><p style="color:#837b7b; margin-top: 5px;"> Bay thẳng</p></p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="price"> 785.000 VND</span> <span>/ khách</span> <br> <a href="./prebooking.html" class="btn" style="border-radius: 5px">Chọn</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" id="chitiet">Thông tin chi tiết chuyến bay</a>
+                    <!-- <button id="chitiet">Thông tin chi tiết chuyến bay</button> -->
+                </div>
+                <div class="thongtinchitiet">
+                    <div class="thongtinbay">
+                        <div class="thoigian">
+                            <div> 13:00</div>
+                            <div> 23 Oct</div>
+                        </div>
+
+                        <div class="diadiem" style="padding-left: 80px;">
+                            <div>Hà Nội (HAN)</div>
+                            <div>Sân bay quốc tế Nội Bài</div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="giobay" style="transform: translateY(400%);"><i class="far fa-clock"></i> 2h 15p</div>
+                        <div class="line"><img src="../anh/Screenshot 2021-09-23 010653.png" alt=""></div>
+                        <div class="ve">
+                            <div class="col span-1-of-3" style="display: flex;">
+                                <div class="logo">
+                                    <img src="../anh/logo-vietnam-airlines nho.png" alt=""
+                                         style="width: 30px; transform: translateY(-20%);">
+                                </div>
+                                <div class="ten" style="margin-left: 10px;">
+                                    <div>Vietnam Airlines VN369</div>
+                                    <div style="margin-top: 10px;">Phổ thông</div>
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3 a">
+                                <div class="hanhli">
+                                    <div style="display: flex;">
+                                        <div><i class="fas fa-suitcase-rolling icon"></i></div>
+                                        <div style="margin-left: 10px;">
+                                            <div>Hành lí 23kg</div>
+                                            <div style="margin-top:5px ;">Hành lí xách tay 12kg</div>
+                                            <div style="margin-top:5px ; ">
+                                                <i class="fa fa-info-circle icon"
+                                                   style="margin-right: 5px;"></i>Không có hành lí mua thêm
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-utensils"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Suất ăn</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-tv"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Giải trí</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-battery-full"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Nguồn sạc & cổng USB</div>
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <div class="maybay">
+                                    <div style="display: flex;">
+                                        <div><i class="fa fa-info-circle icon"></i></i></div>
+                                        <div style="margin-left: 10px;">
+                                            <div>Máy bay Boeing 787</div>
+                                            <div style="margin-top:10px ;">Sơ đồ ghế ngồi 3-3-3</div>
+                                            <div style="margin-top:10px ;">Khoảng cách ghê 32 inches</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thongtinbay">
+                        <div class="thoigian">
+                            <div> 15:15</div>
+                            <div> 23 Oct</div>
+                        </div>
+                        <div class="diadiem" style="padding-left: 80px;">
+                            <div>TP HCM (SGN)</div>
+                            <div>Sân bay quốc tế Tân Sơn Nhất</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thongtin">
+                <div class="thongtinhien">
+                    <ul>
+                        <li><img src="../anh/vietjet.png" alt="vietnam airlines"></li>
+                        <li>
+                            <p>22:40 <p style="color:#837b7b; margin-top: 5px;"> Hà Nội <br> (HAN)</p></p>
+                        </li>
+                        <i class="fas fa-plane icon-plane"></i>
+                        <li>
+                            <p>00:50 <br> <p style="color:#837b7b; margin-top: 5px;"> TP HCM <br>(SGN)</p></p>
+                        </li>
+                        <li>
+                            <p>2h 10m <br><p style="color:#837b7b; margin-top: 5px;"> Bay thẳng</p></p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="price">774.900 VND </span> <span>/ khách</span> <br> <a href="./prebooking.html"
+                                                                                                     class="btn" style="border-radius: 5px">Chọn</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <a href="#" id="chitiet1">Thông tin chi tiết chuyến bay</a>
+                </div>
+                <div class="thongtinchitiet1">
+                    <div class="thongtinbay">
+                        <div class="thoigian">
+                            <div> 14:00</div>
+                            <div> 23 Oct</div>
+                        </div>
+
+                        <div class="diadiem" style="padding-left: 80px;">
+                            <div>Hà Nội (HAN)</div>
+                            <div>Sân bay quốc tế Nội Bài</div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="giobay" style="transform: translateY(400%);"><i class="far fa-clock"></i> 2h 15p</div>
+                        <div class="line"><img src="../anh/Screenshot 2021-09-23 010653.png" alt=""></div>
+                        <div class="ve">
+                            <div class="col span-1-of-3" style="display: flex;">
+                                <div class="logo">
+                                    <img src="../anh/vietjet.png" alt=""
+                                         style="width: 30px; transform: translateY(-20%);">
+                                </div>
+                                <div class="ten" style="margin-left: 10px;">
+                                    <div>VietJet Air VJ321</div>
+                                    <div style="margin-top: 10px;">Phổ thông</div>
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <div class="hanhli">
+                                    <div style="display: flex;">
+                                        <div><i class="fas fa-suitcase-rolling icon"></i></div>
+                                        <div style="margin-left: 10px;">
+                                            <div>Hành lí 23kg</div>
+                                            <div style="margin-top:5px ;">Hành lí xách tay 12kg</div>
+                                            <div style="margin-top:5px ;">
+                                                <i class="fa fa-info-circle icon"
+                                                   style="margin-right: 5px;"></i>Không có hành lí mua thêm
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-utensils"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Suất ăn</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-tv"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Giải trí</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-battery-full"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Nguồn sạc & cổng USB</div>
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <div class="maybay">
+                                    <div style="display: flex;">
+                                        <div><i class="fa fa-info-circle icon"></i></i></div>
+                                        <div style="margin-left: 10px;">
+                                            <div>Máy bay Boeing 787</div>
+                                            <div style="margin-top:10px ;">Sơ đồ ghế ngồi 3-3-3</div>
+                                            <div style="margin-top:10px ;">Khoảng cách ghê 32 inches</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thongtinbay">
+                        <div class="thoigian">
+                            <div> 16:15</div>
+                            <div> 23 Oct</div>
+                        </div>
+                        <div class="diadiem" style="padding-left: 80px;">
+                            <div>TP HCM (SGN)</div>
+                            <div>Sân bay quốc tế Tân Sơn Nhất</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thongtin">
+                <div class="thongtinhien">
+                    <ul>
+                        <li><img src=" ../anh/logo-bamboo-airways-2.jpg" alt="vietnam airlines"></li>
+                        <li>
+                            <p>13:00 <p style="color:#837b7b; margin-top: 5px;"> Hà Nội <br> (HAN)</p></p>
+                        </li>
+                        <i class="fas fa-plane icon-plane"></i>
+                        <li>
+                            <p>15:15 <br> <p style="color:#837b7b; margin-top: 5px;"> TP HCM <br>(SGN)</p></p>
+                        </li>
+                        <li>
+                            <p>2h 15m <br><p style="color:#837b7b; margin-top: 5px;"> Bay thẳng</p></p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="price">810.000 VND </span> <span>/ khách</span> <br> <a href="./prebooking.html"
+                                                                                                     class="btn" style="border-radius: 5px">Chọn</a>
+                            </p>
+                        </li>
+
+
+                    </ul>
+                    <a href="#" id="chitiet2">Thông tin chi tiết chuyến bay</a>
+                </div>
+                <div class="thongtinchitiet2">
+                    <div class="thongtinbay">
+                        <div class="thoigian">
+                            <div> 14:00</div>
+                            <div> 23 Oct</div>
+                        </div>
+
+                        <div class="diadiem" style="padding-left: 80px;">
+                            <div>Hà Nội (HAN)</div>
+                            <div>Sân bay quốc tế Nội Bài</div>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="giobay" style="transform: translateY(400%);"><i class="far fa-clock"></i> 2h 15p</div>
+                        <div class="line"><img src="../anh/Screenshot 2021-09-23 010653.png" alt=""></div>
+                        <div class="ve">
+                            <div class="col span-1-of-3" style="display: flex;">
+                                <div class="logo">
+                                    <img src="../anh/bamboo-airways.png" alt=""
+                                         style="width: 30px; transform: translateY(-20%);">
+                                </div>
+                                <div class="ten" style="margin-left: 10px;">
+                                    <div>BamBoo Airways BA457</div>
+                                    <div style="margin-top: 10px;">Phổ thông</div>
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <div class="hanhli">
+                                    <div style="display: flex;">
+                                        <div><i class="fas fa-suitcase-rolling icon"></i></div>
+                                        <div style="margin-left: 10px;">
+                                            <div>Hành lí 23kg</div>
+                                            <div style="margin-top:10px ;">Hành lí xách tay 12kg</div>
+                                            <div style="margin-top:10px ;">
+                                                <i class="fa fa-info-circle icon"
+                                                   style="margin-right: 5px;"></i>Không có hành lí mua thêm
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-utensils"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Suất ăn</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-tv"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Giải trí</div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="icon" style="margin-top: 10px;"><i class="fa fa-battery-full"></i></div>
+                                    <div style="margin-left: 10px; margin-top: 10px;">Nguồn sạc & cổng USB</div>
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3">
+                                <div class="maybay">
+                                    <div style="display: flex;">
+                                        <div><i class="fa fa-info-circle icon"></i></i></div>
+                                        <div style="margin-left: 10px;">
+                                            <div>Máy bay Boeing 787</div>
+                                            <div style="margin-top:10px ;">Sơ đồ ghế ngồi 3-3-3</div>
+                                            <div style="margin-top:10px ;">Khoảng cách ghê 32 inches</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thongtinbay">
+                        <div class="thoigian">
+                            <div> 16:15</div>
+                            <div> 23 Oct</div>
+                        </div>
+                        <div class="diadiem" style="padding-left: 80px;">
+                            <div>TP HCM (SGN)</div>
+                            <div>Sân bay quốc tế Tân Sơn Nhất</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+</body>
+
+</html>
+
