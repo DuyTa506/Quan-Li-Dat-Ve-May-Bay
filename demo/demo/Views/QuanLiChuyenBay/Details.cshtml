@@ -1,0 +1,35 @@
+﻿@model demo.Models.ChuyenBay
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if(Model == null)
+            {
+<div class=" center_title_bar">Không tìm thấy chuyến bay</div>
+            }
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Ma Chuyen Bay</th>
+            <th scope="col">Loai May Bay</th>
+            <th scope="col">Thoi gian bay</th>
+            <th scope="col">Gio cat canh</th>
+            <th scope="col">Gia Nguoi Lon</th>
+            <th scope="col">Gia Tre Em</th>
+    </thead>
+    <tbody>
+        {
+        <tr>
+            <td>@Model.MaChuyenBay</td>
+            <td>@Model.LoaiMayBay</td>
+            <td>@Model.ThoiGianBay</td>
+            <td>@Model.GioCatCanh</td>
+            <td>@Model.GiaNguoiLon</td>
+            <td>@Model.GiaTreEm</td>
+
+        </tr>
+        }
+
+    </tbody>
+</table>
+

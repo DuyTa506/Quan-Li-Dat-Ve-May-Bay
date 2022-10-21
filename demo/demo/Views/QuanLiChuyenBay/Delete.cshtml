@@ -1,0 +1,81 @@
+﻿@model demo.Models.ChuyenBay
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ChuyenBay</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayCatCanh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayCatCanh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GioCatCanh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioCatCanh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThoiGianBay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianBay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaNguoiLon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaNguoiLon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaTreEm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaTreEm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangBay.SanBay_CatCanh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangBay.SanBay_CatCanh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MayBay.TenMayBay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MayBay.TenMayBay)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

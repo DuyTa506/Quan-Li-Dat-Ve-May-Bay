@@ -1,0 +1,46 @@
+﻿@model List<demo.Models.ChuyenBay>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<a href="~/QuanLiChuyenBay/Create">
+    <button type ="button" class=" btn-success">Create</button>
+</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Ma Chuyen Bay</th>
+            <th scope="col">Loai May Bay</th>
+            <th scope="col">Thoi gian bay</th>
+            <th scope="col">Gio cat canh</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaChuyenBay</td>
+                <td>@item.LoaiMayBay</td>
+                <td>@item.ThoiGianBay</td>
+                <td>@item.GioCatCanh</td>
+                <td>
+                    <a href="~/QuanLiChuyenBay/Details?MaChuyenBay=@item.MaChuyenBay">
+                        Chi tiet
+                    </a>
+                    <a href="~/QuanLiChuyenBay/Edit?MaChuyenBay=@item.MaChuyenBay">
+                        Sua
+                    </a>
+                    <a href="~/QuanLiChuyenBay/Delete?MaChuyenBay=@item.MaChuyenBay">
+                        Xoa
+                    </a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+

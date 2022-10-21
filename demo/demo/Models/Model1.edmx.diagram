@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="24e9c0763bae4ed0a05586eb547890c2" Name="Diagram1">
+        <EntityTypeShape EntityType="DatVeMayBayModel.Admin" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.ChangBay" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.ChuyenBay" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.HanhLy" Width="1.5" PointX="7.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.HinhThucThanhToan" Width="1.5" PointX="9.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.HoaDon" Width="1.5" PointX="12" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.KhachHang" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.KhuyenMai" Width="1.5" PointX="9.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.LoaiVe" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.MayBay" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.NganHang" Width="1.5" PointX="12" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.PhieuDatVe" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.SanBay" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.sysdiagram" Width="1.5" PointX="2.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.ThongTinXuatHoaDon" Width="1.5" PointX="9.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.Ve" Width="1.5" PointX="9.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.KhachHang_DatVe" Width="1.5" PointX="9.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatVeMayBayModel.PhieuDatVe_HanhLy" Width="1.5" PointX="9.75" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_ChangBay_SanBay" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_ChangBay_SanBay1" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_ChuyenBay_ChangBay" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_ChuyenBay_MayBay" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_PhieuDatVe_ChuyenBay" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_PhieuDatVe_HanhLy_HanhLy" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_HoaDon_HinhThucThanhToan" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_HoaDon_KhuyenMai" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_HoaDon_ThongTinXuatHoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_HoaDon_Ve" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_KhachHang_DatVe_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_PhieuDatVe_LoaiVe" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_KhachHang_DatVe_PhieuDatVe" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_PhieuDatVe_HanhLy_PhieuDatVe" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.FK_Ve_PhieuDatVe" ManuallyRouted="false" />
+        <AssociationConnector Association="DatVeMayBayModel.ThanhToan_NganHang" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
